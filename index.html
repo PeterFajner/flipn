@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 
 <head>
-	<title>SuperFlip</title>
+	<title>Flipn</title>
 	<link rel="stylesheet" href="src/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="main.js"></script>
 </head>
 
-<body>
+<body onLoad="init()">
 	<header>
-		<h1 class="Centered"><span class="Page_Title">SuperFlip</span></h1>
+		<h1 class="Centered">
+			<span class="Page_Title_1">Flip</span><span class="Page_Title_2">n</span>
+		</h1>
 	</header>
+	<div class="instructions">Click on the squares; goal is to make them all yellow.</div>
 	<div id="selectors">
 		Number of rows
 		<input id="num_rows" type="number" name="num_rows" min="1" max="10" value="3">
 		Number of columns
 		<input id="num_columns" type="number" name="num_columns" min="1" max="10" value="3">
-		<input id="reset" type="button" name="reset" onclick="resetButtonPressed()" value="Start">
+		Difficulty
+		<input id="difficulty" type="number" name="difficulty" min="0" max="4" value="2">
+		<input id="reset" type="button" name="reset" onclick="startButtonPressed()" value="Start">
 	</div>
-	<div id="canvas_container" class="borderless_container">
-		<canvas id="canvas" class="borderless_container"></canvas>
+	<div id="game_container" class="borderless_container">
 	</div>
 </body>

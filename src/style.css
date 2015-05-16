@@ -10,3 +10,25 @@
 	position: relative;
 	margin: 5px;
 }
+
+.off {
+	background-color: blue;
+}
+
+.on {
+	background-color: yellow;
+}
+
+.Page_Title_2 {
+	font-style: italic;
+	font-family: Georgia;
+}
+
+.instructions {
+	color: #999;
+}
+
+.button {
+	width: 10em;
+	height: 10em;
+}
