@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+	<title>SuperFlip</title>
+	<link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="Centered"><span class="Page_Title">SuperFlip</span></h1>
+	</header>
+	<div id="selectors">
+		Number of rows
+		<input id="num_rows" type="number" name="num_rows" min="1" max="10" value="3">
+		Number of columns
+		<input id="num_columns" type="number" name="num_columns" min="1" max="10" value="3">
+		<input id="reset" type="button" name="reset" onclick="resetButtonPressed()" value="Start">
+	</div>
+	<div id="canvas_container" class="borderless_container">
+		<canvas id="canvas" class="borderless_container"></canvas>
+	</div>
+</body>
